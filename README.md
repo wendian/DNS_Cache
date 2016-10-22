@@ -10,3 +10,10 @@ The hash table is 3 times the maximum size of the cache just to avoid collisions
 The table's highest probability of collision is .3 and insert, retrieve, and remove usually take O(1) time.
 
 The DNS Server uses this cache to store domain names and IP_addresses, the original assignment only required the cache be a file on the system and of infinite size, which I thought was unrealistic for a cache (but it's okay because caching was not the focus of the original project).
+
+The run the program, just call:
+```
+python3 DNSServer.py
+```
+
+And use some sort of client to send domain name requests such as "github.com" to the server.
